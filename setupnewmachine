@@ -1,0 +1,13 @@
+Edit IP address
+
+nano /etc/network/interfaces
+  Change iface eno1 inet dhcp to iface eno1 inet static
+  
+  ## Add the following. Edit where needed
+  address 192.168.2.249
+  netmask 255.255.255.0
+  gateway 192.168.2.254
+  dns-nameservers 192.168.2.254 8.8.8.8 1.1.1.1
+  
+## Reboot
+
